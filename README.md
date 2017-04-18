@@ -153,7 +153,7 @@ Choose a supported encoder library by by uncommenting its #define statement and 
 If you want to control PWM servos attached to your controller, look for the line:
 
 <pre>
-#define USE_SERVOS
+# define USE_SERVOS
 </pre>
 
 and make sure it is not commented out like this:
@@ -176,19 +176,19 @@ The ROSArduinoLibrary accepts single-letter commands over the serial port for po
 The list of commands can be found in the file commands.h.  The current list includes:
 
 <pre>
-#define ANALOG_READ    'a'
-#define GET_BAUDRATE   'b'
-#define PIN_MODE       'c'
-#define DIGITAL_READ   'd'
-#define READ_ENCODERS  'e'
-#define MOTOR_SPEEDS   'm'
-#define PING           'p'
-#define RESET_ENCODERS 'r'
-#define SERVO_WRITE    's'
-#define SERVO_READ     't'
-#define UPDATE_PID     'u'
-#define DIGITAL_WRITE  'w'
-#define ANALOG_WRITE   'x'
+# define ANALOG_READ    'a'
+# define GET_BAUDRATE   'b'
+# define PIN_MODE       'c'
+# define DIGITAL_READ   'd'
+# define READ_ENCODERS  'e'
+# define MOTOR_SPEEDS   'm'
+# define PING           'p'
+# define RESET_ENCODERS 'r'
+# define SERVO_WRITE    's'
+# define SERVO_READ     't'
+# define UPDATE_PID     'u'
+# define DIGITAL_WRITE  'w'
+# define ANALOG_WRITE   'x'
 </pre>
 
 For example, to get the analog reading on pin 3, use the command:
@@ -246,18 +246,18 @@ use_base_controller: False
 base_controller_rate: 10
 
 # === Robot drivetrain parameters
-#wheel_diameter: 0.146
-#wheel_track: 0.2969
-#encoder_resolution: 8384 # from Pololu for 131:1 motors
-#gear_reduction: 1.0
-#motors_reversed: True
+# wheel_diameter: 0.146
+# wheel_track: 0.2969
+# encoder_resolution: 8384 # from Pololu for 131:1 motors
+# gear_reduction: 1.0
+# motors_reversed: True
 
 # === PID parameters
-#Kp: 20
-#Kd: 12
-#Ki: 0
-#Ko: 50
-#accel_limit: 1.0
+# Kp: 20
+# Kd: 12
+# Ki: 0
+# Ko: 50
+# accel_limit: 1.0
 
 # === Sensor definitions.  Examples only - edit for your robot.
 #     Sensor type can be one of the follow (case sensitive!):
@@ -472,7 +472,7 @@ First, you need to edit the ROSArduinoBridge sketch. At the top of
 the file comment out the line:
 
 <pre>
-#define USE_BASE
+# define USE_BASE
 </pre>
 
 so that it looks like this:
